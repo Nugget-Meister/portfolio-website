@@ -1,22 +1,29 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import anime from "animejs/lib/anime.es.js";
 import Navbar from "../../common/Navbar";
-import Button from '@mui/material/Button';
-import me from '../../../assets/me.png'
 
+import me from '../../../assets/me.png'
+import { Grid } from "@mui/material";
+import Sidebar from "../../common/Sidebar/Sidebar";
 
 const Home = () => {
 
   return (
    <>
     <Navbar/>
-      <h1>Hi I'm Keith</h1>
+
+    <Grid container spacing={2}>
+      <Grid xs={10}>
+        <div className="container">
+          <h1>Hi I'm Keith</h1> 
+          <img src={me} alt="" width={"400px"}/>
+        </div>
+      </Grid>
+      <Grid xs={2}>
+        <Sidebar />
+      </Grid>
+    </Grid>
         
-      <Button variant="contained">About Me</Button>
-      <Button variant="contained">Projects</Button><br />
-      <Button variant="contained">Contact Me</Button>
-      <img src={me} alt="" width={"400px"}/>
 
    </>
   );
