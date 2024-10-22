@@ -11,19 +11,20 @@ const Home = () => {
   return (
    <>
     <Navbar/>
+    <div className="slide">
+      <h1>I'm Keith</h1> 
+      <h1>I like making stuff</h1>
+      <img src={me} alt="" width={"400px"}/>
+    </div>
+    <div className="slide aboutme">
 
-    <Grid container spacing={2}>
-      <Grid xs={10}>
-        <div className="container">
-          <h1>Hi I'm Keith</h1> 
-          <img src={me} alt="" width={"400px"}/>
-        </div>
-      </Grid>
-      <Grid xs={2}>
-        <Sidebar />
-      </Grid>
-    </Grid>
-        
+    </div>
+    <div className="slide projects">
+
+    </div>
+    <div className="slide contact">
+
+    </div>      
 
    </>
   );
